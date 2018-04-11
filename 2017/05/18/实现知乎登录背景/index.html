@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>实现知乎登录背景 | Tommy&#39;s blog</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Tommy's blog">
+    <meta name="author" content="Tommy Fu">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Tommy&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Tommy's blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5260494&auto=1&height=66"></iframe>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-05-18T05:56:24.000Z" itemprop="datePublished">
+          2017-05-18
+      </time>
+    
+    
+    | 
+    <a href='/tags/javascript-canvas/'>javascript canvas</a>
+    
+    
+</span>
+                <h1>实现知乎登录背景</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="知乎登录背景的实现"><a href="#知乎登录背景的实现" class="headerlink" title="知乎登录背景的实现"></a>知乎登录背景的实现</h1><hr>
+<h4 id="前戏"><a href="#前戏" class="headerlink" title="前戏"></a>前戏</h4><p>知乎作为程序员装逼和学会装备的利器，实属每天必逛之地，进来，我们就来模仿一下其登录背景的实现.</p>
+<blockquote>
+<p>效果演示</p>
+</blockquote>
+<p><img src="http://oh3pw68gg.bkt.clouddn.com/newCoolThree.gif" alt=""></p>
+<blockquote>
+<p>实现原理</p>
+</blockquote>
+<p>效果其实很简单，就是很多小圆用线互相连接，然后不断改变位置，线会随着距离改变其可视度，这里我们用canvas来实现，话不多说 开始撸</p>
+<blockquote>
+<p>代码</p>
+</blockquote>
+<h3 id="HTML结构"><a href="#HTML结构" class="headerlink" title="HTML结构"></a>HTML结构</h3><p><code>&lt;canvas id=&quot;cns&quot;&gt;&lt;/canvas&gt;</code></p>
+<h3 id="预置CSS"><a href="#预置CSS" class="headerlink" title="预置CSS"></a>预置CSS</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">html,body&#123;</div><div class="line">            <span class="attr">width</span>: <span class="number">100</span>%;</div><div class="line">            height: <span class="number">100</span>%;</div><div class="line">            overflow: hidden;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h3 id="js效果实现"><a href="#js效果实现" class="headerlink" title="js效果实现"></a>js效果实现</h3><p>####常量声明<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> Count=<span class="number">35</span>;</div><div class="line">    <span class="keyword">let</span> CircleArr=[];</div><div class="line">    <span class="keyword">let</span> WIDTH=<span class="built_in">window</span>.innerWidth,HEIGHT=<span class="built_in">window</span>.innerHeight;</div><div class="line">    <span class="keyword">let</span> canvas=<span class="built_in">document</span>.getElementById(<span class="string">'cns'</span>);</div><div class="line">    canvas.width=WIDTH;</div><div class="line">    canvas.height=HEIGHT;</div><div class="line">    <span class="keyword">let</span> context=canvas.getContext(<span class="string">'2d'</span>)</div><div class="line">    context.strokeStyle=<span class="string">'rgba(0,0,0,0.04)'</span>;</div><div class="line">    context.strokeWidth=<span class="number">1</span>;</div><div class="line">    context.fillStyle=<span class="string">'rgba(0,0,0,0.08)'</span>;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>这里我们定义了 35个小球 以及 用来装小球的容器，获取屏幕宽高 ,  同时获取画笔，预设置画笔的属性，轻松加愉快 orz …</p>
+<h4 id="画小球"><a href="#画小球" class="headerlink" title="画小球"></a>画小球</h4><h5 id="万物皆对象，注意对象又来了"><a href="#万物皆对象，注意对象又来了" class="headerlink" title="万物皆对象，注意对象又来了~"></a>万物皆对象，注意对象又来了~</h5><p><strong>定义小球原型</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Circle</span>(<span class="params">x,y,r,moveX,moveY</span>) </span>&#123;</div><div class="line"><span class="comment">// x:小球x坐标, y: y坐标,r:半径,moveX:x方向移动速度,moveY:y方向移动速度</span></div><div class="line">     <span class="keyword">this</span>.x=x;</div><div class="line">     <span class="keyword">this</span>.y=y;</div><div class="line">     <span class="keyword">this</span>.r=r;</div><div class="line">     <span class="keyword">this</span>.moveX=moveX;</div><div class="line">     <span class="keyword">this</span>.moveY=moveY;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p><strong>画球</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">drawCircle</span>(<span class="params">ctx,x,y,r,moveX,moveY</span>) </span>&#123;</div><div class="line">    <span class="keyword">let</span> circle=<span class="keyword">new</span> Circle(x,y,r,moveX,moveY);</div><div class="line">    ctx.beginPath();</div><div class="line">    ctx.arc(circle.x,circle.y,circle.r,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI)</div><div class="line">    ctx.closePath()</div><div class="line">    ctx.fill();</div><div class="line">    <span class="keyword">return</span> circle</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="同样的原理-画出小球之间的连线"><a href="#同样的原理-画出小球之间的连线" class="headerlink" title="同样的原理 画出小球之间的连线"></a>同样的原理 画出小球之间的连线</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Line</span>(<span class="params">x, y, _x, _y, o</span>) </span>&#123;</div><div class="line"><span class="comment">// x，y分别为起点x，y坐标，_x,_y分别为终点坐标,o为透明度度</span></div><div class="line">      <span class="keyword">this</span>.x=x;</div><div class="line">      <span class="keyword">this</span>.y=y;</div><div class="line">      <span class="keyword">this</span>._x=_x;</div><div class="line">      <span class="keyword">this</span>._y=_y;</div><div class="line">      <span class="keyword">this</span>.o=o</div><div class="line">  &#125;</div><div class="line">      <span class="function"><span class="keyword">function</span> <span class="title">drawLine</span>(<span class="params">ctx, x, y, _x, _y, o</span>) </span>&#123;</div><div class="line">      <span class="keyword">let</span> line = <span class="keyword">new</span> Line(x, y, _x, _y, o)</div><div class="line">      ctx.beginPath()</div><div class="line">      ctx.strokeStyle = <span class="string">'rgba(0,0,0,'</span>+ o +<span class="string">')'</span></div><div class="line">      ctx.moveTo(line.x, line.y)</div><div class="line">      ctx.lineTo(line._x, line._y)</div><div class="line">      ctx.closePath()</div><div class="line">      ctx.stroke();</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h5 id="初始化canvas方法init"><a href="#初始化canvas方法init" class="headerlink" title="初始化canvas方法init()"></a>初始化canvas方法init()</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//辅助函数num（）获取随机变量</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">num</span>(<span class="params">maxValue, minValue</span>) </span>&#123;</div><div class="line">     <span class="keyword">let</span> min=<span class="built_in">arguments</span>[<span class="number">1</span>]||<span class="number">0</span>;</div><div class="line">     <span class="keyword">let</span> max=maxValue;</div><div class="line">     <span class="keyword">return</span> <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*(max-min))+min</div><div class="line"> &#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">init</span>(<span class="params"></span>) </span>&#123;</div><div class="line"><span class="comment">//初始化小球 并且将小球装进容器CircleArr 便于draw（）里面调用</span></div><div class="line">	<span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;Count;i++)&#123;</div><div class="line">	CircleArr.push(drawCircle(context,num(WIDTH),num(HEIGHT),num(<span class="number">15</span>,<span class="number">2</span>),num(<span class="number">10</span>,<span class="number">-10</span>)/<span class="number">40</span>,num(<span class="number">10</span>,<span class="number">-10</span>)/<span class="number">40</span>))</div><div class="line">	&#125;</div><div class="line">	draw()</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h6 id="负责绘画出整个场景draw"><a href="#负责绘画出整个场景draw" class="headerlink" title="负责绘画出整个场景draw()"></a>负责绘画出整个场景draw()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">draw</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    context.clearRect(<span class="number">0</span>,<span class="number">0</span>,WIDTH,HEIGHT);</div><div class="line">    <span class="comment">// 清空画布</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span> ;i&lt;Count;i++)&#123;</div><div class="line">    <span class="comment">// 根据arr里面的小球数据绘制小球</span></div><div class="line">        drawCircle(context,CircleArr[i].x,CircleArr[i].y,CircleArr[i].r)</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; Count; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; Count; j++) &#123;</div><div class="line">        <span class="comment">// 双重for循环绘制小球之间的连线</span></div><div class="line">            <span class="keyword">if</span> (i + j &lt; Count&amp;&amp;i !== j&amp;&amp;i!==(i+j)) &#123;</div><div class="line">            <span class="comment">// i + j &lt; Count来避免重复画线 i !==j、i!==(i+j)避免自己和自己画线</span></div><div class="line">                <span class="keyword">let</span> X=<span class="built_in">Math</span>.abs(CircleArr[i+j].x-CircleArr[i].x)</div><div class="line">                <span class="keyword">let</span> Y=<span class="built_in">Math</span>.abs(CircleArr[i+j].y-CircleArr[i].y)</div><div class="line">                获取 小球之间的直线距离</div><div class="line">                <span class="keyword">let</span> dis=<span class="built_in">Math</span>.sqrt(X*X + Y*Y);</div><div class="line">                <span class="keyword">let</span> C=<span class="number">1</span>/dis*<span class="number">7</span><span class="number">-0.009</span>;</div><div class="line">                <span class="comment">// 距离越远透透明度越低</span></div><div class="line">                <span class="keyword">let</span> opacity=C&gt;<span class="number">0.03</span>?<span class="number">0.03</span>:C;</div><div class="line">                <span class="keyword">if</span>(opacity&gt;<span class="number">0</span>)&#123;</div><div class="line">                    drawLine(context,CircleArr[i].x,CircleArr[i].y,CircleArr[i+j].x,CircleArr[i+j].y,opacity)</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="不断重绘，让小球动起来"><a href="#不断重绘，让小球动起来" class="headerlink" title="不断重绘，让小球动起来"></a>不断重绘，让小球动起来</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    init()</div><div class="line">    setInterval(</div><div class="line">        <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;Count;i++)&#123;</div><div class="line">                <span class="keyword">let</span> circle=CircleArr[i];</div><div class="line">                circle.x+=circle.moveX;</div><div class="line">                circle.y+=circle.moveY;</div><div class="line">                <span class="keyword">if</span>(circle.x&gt;WIDTH)&#123;</div><div class="line">                    circle.x=<span class="number">0</span></div><div class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(circle.x&lt;<span class="number">0</span>)&#123;</div><div class="line">                    circle.x=WIDTH</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span>(circle.y&gt;HEIGHT)&#123;</div><div class="line">                    circle.y=<span class="number">0</span></div><div class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(circle.y&lt;<span class="number">0</span>)(</div><div class="line">                    circle.y=HEIGHT</div><div class="line">                )</div><div class="line">            &#125;</div><div class="line">            draw()</div><div class="line">        &#125;,<span class="number">16</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p>至此高逼格的知乎门面就被我们搞定一丢丢了，知乎是前端学习的榜样，大家要像窑子一样多逛它。<a href="https://github.com/fzh199410/2Late2Learn/blob/master/%E7%9F%A5%E4%B9%8E%E7%99%BB%E5%BD%95/Findex.html" target="_blank" rel="external">代码地址,欢迎戳戳戳</a></p>
+</blockquote>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/05/25/MusicVisualizer/" style="float: left;">
+        ← MusicVisualizer
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/05/16/hello-world/">
+        Hello World →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Tommy Fu. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
